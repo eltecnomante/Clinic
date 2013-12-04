@@ -1,0 +1,69 @@
+#contenido #sideBar {
+	margin:0 auto; 
+	padding-bottom:3.5em;
+
+	&:after{
+		@extend %clearfixAfter;
+	}		
+}
+
+#contenido #sideBar h3{    
+    text-align:center;
+    font-size:1.3em
+ }
+ 
+#contenido #sideBar  ul{
+	padding-left:0;
+    margin:0 auto;    
+    list-style:none;    
+    text-align:center;
+	width:100%;
+}
+
+#contenido #sideBar  ul li {
+    margin-left:3%;
+    margin-top: 1em;    
+	text-align:center;
+	float:left;    
+	width:auto;
+	border:1px solid $colorTema;
+    @include border-radius(5px);
+}
+
+#contenido #sideBar  ul li a#facebook{
+	background-color:#3B5998;
+	font-color:#fff;
+}
+
+#contenido #sideBar  ul li a,
+#contenido #sideBar  ul li span{
+    display:block;
+    font-size:17px;
+    text-decoration:none;
+    color:#fff;   	  
+	padding:0.3em 2em 0.6em;
+	background-color:  $colorTema;    
+}
+
+#contenido #sideBar  ul li.spans{
+	background-color:#fff;
+	background-image:none;
+	color:#000;
+	z-index:1;
+}
+
+#contenido #sideBar  ul li.spans span{
+	color: #000;
+	padding-bottom:3em;
+	background-color:#D7DAE1;
+	display:block;
+}
+
+#contenido #sideBar ul li.spans a,
+#contenido #sideBar ul li.enlaces span{
+	display:none;
+}
+#contenido #sideBar ul li.spans span,
+#contenido #sideBar ul li.enlaces a{
+	display:block;
+}

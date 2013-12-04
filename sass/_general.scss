@@ -1,0 +1,66 @@
+html{
+	background-color:$colorTema;	
+	font-size:12px;
+	
+	body {
+		margin:0 auto;		
+	    width:100%;
+		background:#fff;    		
+	    font-family:Verdana;
+
+		@include border-radius(14px);
+	}
+}
+
+a{
+	color:#333;
+
+	&:hover{
+		@include opacity(0.5);
+		
+	}
+}
+
+.seccion h2,
+.seccion h3{
+	
+	font-family: Signika, Arial, Helvetica, Sans-serif;
+	text-shadow:0 0 1px #777777;
+	margin-bottom:1em;
+	text-align:left;		
+	@include font-size(24);
+	/*
+
+            ________                                                        
+       _,.-Y  |  |  Y-._                                                    
+   .-~"   ||  |  |  |   "-.                                                 
+   I" ""=="|" !""! "|"[]""|     _____      
+   L__  [] |..------|:   _[----I" .-{"-.                                   
+  I___|  ..| l______|l_ [__L]_[I_/r(=}=-P                                   
+ [L______L_[________]______j~  '-=c_]/=-^                                   
+  \_I_j.--.\==I|I==_/.--L_]                                                 
+    [_((==)[`-----"](==)j                                                   
+       I--I"~~"""~~"I--I                                                    
+       |[]|         |[]|                                                    
+       l__j         l__j                                                    
+       |!!|         |!!|                                                    
+       |..|         |..|                                                    
+       ([])         ([])                                                    
+       ]--[         ]--[                                                    
+       [_L]         [_L]                                                
+      /|..|\       /|..|\                                                   
+     `=}--{='     `=}--{='                                                  
+    .-^--r-^-.   .-^--r-^-.                                                 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                
+la verdad es que este margin-right lo pongo para solucionar una extraña aparicion en el 
+Chrome, si amigos, en el Chrome el h2 se alinea a la derecha extraña e irremediablemente                      
+*/
+	/*margin-right:120px;*/		
+}
+
+.seccion p{
+	font-family:Verdana,Arial,Sans-serif; 
+	line-height:1.3em;
+	@include font-size(12);
+	margin-top:1.5em;
+}

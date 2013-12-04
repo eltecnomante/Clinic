@@ -1,0 +1,47 @@
+#promo{	
+	background:none;
+	margin-top:5px;
+	border-width:5px 0 5px 0;
+	width:auto;
+	height:160px;
+	position:relative;
+	display:block;
+	border:0;
+	@include border-radius(0);	
+
+	a{
+		background:url(../imagenes/banner_miguitas_tablet.png) no-repeat center top transparent;		
+		border:5px solid $colorTema;		
+		display:block;
+		margin:0 auto;
+		padding:5px 0;
+		width:35em;
+		height:140px;
+		@include border-radius(5px);		
+	}
+
+	&:after{
+		clear: both;
+	    content: ".";
+	    display: block;
+	    height: 0;
+	    visibility: hidden;
+	}
+}
+
+#contenido  #sideBar ul{
+	margin:0 auto;	
+}
+
+#contenido  #sideBar ul li{
+	margin-left:2%;
+	display:inline-block;
+
+	&:first-child{
+		margin-left:0;
+	}
+	a{
+		padding:0.3em 10% 0.6em;
+	}
+
+}

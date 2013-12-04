@@ -1,0 +1,19 @@
+$colorTema:#929AAF;
+$fontSizeBasico:12;
+
+$maxMovil:650px;
+$maxTablet:980px;
+
+
+@mixin font-size($pixels: $fontSizeBasico){
+	font-size:$pixels*1px;
+	font-size:$pixels/$fontSizeBasico*1rem;
+}
+
+%clearfixAfter{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

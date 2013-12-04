@@ -1,0 +1,162 @@
+html{
+	background-color:#fff;
+	body{	
+		width:100%;	
+		padding-top:0;
+		margin-top:0;
+		top:0;
+	}
+}
+
+#contenido{
+	margin:0;
+}
+#banner{
+	margin:0;
+	padding-top:0;
+}
+
+#banner #cabecera{
+	background:url("../imagenes/logoMoviles.png") no-repeat scroll 85% center $colorTema;
+	height:125px;
+	margin:0;
+	@include border-radius(0);		
+}
+
+#cabecera h1{
+	margin-top:0;
+	top:1em;
+	left:1em;
+	position:relative;
+}
+
+#banner #cabecera h1 a,
+#banner #cabecera h1 span{
+
+	text-align:left;
+	float:none;
+	@include font-size(16);
+	margin-left:1%;
+	padding-right:50%;		
+	display:block;
+	margin-top:0;
+}
+
+#contenido{	
+	padding-bottom:0;
+}
+
+#contenido #sideBar {
+	padding-bottom:0;
+}
+#contenido #sideBar ul{
+	padding:0;
+	margin:0;
+}
+
+#contenido #sideBar ul li{	
+	clear:both;
+	display:block;
+	width:100%;
+	margin:0;
+	float:none;
+	border-top:1px solid #000;	
+	@include border-radius(0);
+}	
+#contenido #sideBar ul li.galeria{
+	border-top:none;
+}	
+
+#contenido #sideBar ul li a,
+#contenido #sideBar ul li span{
+	padding:0.75em;
+	@include border-radius(0);
+}
+
+#contenido #sideBar ul li.spans span{
+	padding-bottom: 6px;
+	padding-top: 3px;
+}
+
+#contenido {	
+	background-color: #FFFFFF;
+	padding-left: 0;
+	padding-right: 1px;	
+	@include border-radius(0);
+
+	.seccion{
+		@include border-radius(0);
+		padding:1em;
+	}
+}
+
+#contenido .seccion{
+	h3{
+		@include font-size(14);
+	}
+}
+#contenido a.imgI,
+#contenido a.imgD{
+	display:none;
+}
+
+#servicios ul{
+	padding-left:0;
+	list-style:none !important;
+}
+
+#contenido  .seccion{
+	@include border-radius(0);
+}
+
+/*Estilos para contacto*/
+
+#contacto  #calle{
+	display:block;
+}
+#contacto  #calle p{
+	margin-left:2%;
+
+}
+#contacto  #mapa iframe{
+	display:none;
+}
+/*Fin estilos para contacto*/	
+
+/*Estilos para galeria*/
+#galeria #mensaje{
+	display:block;
+}	
+
+#contenido #galeria{
+	height:auto;
+	margin:0 auto;
+
+	ul{		
+		margin-left:20%;
+		float:none;
+	}
+}
+
+#index #portadaImg{
+	margin-left:0;		
+	
+	img{
+		max-width:150px;
+		max-height:150px;
+	}	
+}
+
+#promo{
+	width:100%;
+	background:url(../imagenes/banner_miguitas_movil.png) no-repeat center top transparent;
+	margin-top:5px;
+	margin-bottom:5px;
+
+	border-width:5px 0 5px 0;
+	@include border-radius(0);	
+	a{
+		padding:5px 0;
+		
+	}
+}

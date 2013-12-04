@@ -1,0 +1,232 @@
+html{
+	background-color:$colorTema;	
+	body {
+		margin:0 auto;		
+	    width:100%;
+		background:#fff;    
+	    font-family:Verdana;    
+		@include border-radius(14px);
+	}
+}
+
+a{
+	color:#333;
+
+	&:hover{
+		@include opacity(0.5);
+		
+	}
+}
+
+#contenido{
+	font-family:Verdana;	
+	margin:20px;  
+	padding-bottom: 20px;
+}
+
+
+#contenido  .seccion{
+	background-color: #d7dae1;
+    padding: 3em 1em 1em 3em;
+	z-index:2;
+	position:relative;
+	@include border-radius(25px);	
+}
+
+#contenido .seccion h2,
+#contenido .seccion h3{
+	
+	font-family: Signika, Arial, Helvetica, Sans-serif;
+	text-shadow:0 0 1px #777777;
+	margin-bottom:1em;
+	text-align:left;		
+	@include font-size(24);
+	/*
+
+            ________                                                        
+       _,.-Y  |  |  Y-._                                                    
+   .-~"   ||  |  |  |   "-.                                                 
+   I" ""=="|" !""! "|"[]""|     _____      
+   L__  [] |..------|:   _[----I" .-{"-.                                   
+  I___|  ..| l______|l_ [__L]_[I_/r(=}=-P                                   
+ [L______L_[________]______j~  '-=c_]/=-^                                   
+  \_I_j.--.\==I|I==_/.--L_]                                                 
+    [_((==)[`-----"](==)j                                                   
+       I--I"~~"""~~"I--I                                                    
+       |[]|         |[]|                                                    
+       l__j         l__j                                                    
+       |!!|         |!!|                                                    
+       |..|         |..|                                                    
+       ([])         ([])                                                    
+       ]--[         ]--[                                                    
+       [_L]         [_L]                                                
+      /|..|\       /|..|\                                                   
+     `=}--{='     `=}--{='                                                  
+    .-^--r-^-.   .-^--r-^-.                                                 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                
+la verdad es que este margin-right lo pongo para solucionar una extraña aparicion en el 
+Chrome, si amigos, en el Chrome el h2 se alinea a la derecha extraña e irremediablemente                      
+*/
+	/*margin-right:120px;*/		
+}
+
+.seccion p{
+	font-family:Verdana,Arial,Sans-serif; 
+	line-height:1.3em;
+	@include font-size(12);
+	margin-top:1.5em;
+}
+
+/*Estilos para servicios*/
+#servicios ul{
+	margin-left:1em;
+
+	li{
+		margin-top:3em;
+		list-style:none;
+		text-align:left;
+	}
+}
+
+#servicios  .listaInterior{
+	margin-left:0em;
+
+	li{
+		margin-top:0.5em;
+		list-style:disc;
+	}
+}
+/*Fion de estilos para servicios*/
+
+
+/*Estilos para contacto*/
+
+#contacto  #calle{
+	display:none;
+}
+#contacto h2{
+	margin-top:1em;
+}
+
+/*Fin estilos para contactos*/
+
+/*Imagenes para dentro de las secciones*/
+
+#index #portadaImg{
+	padding-left:27%;
+	/*padding-left:14.25em;*/
+	margin-top:2em;
+}
+
+
+#contenido img{
+	padding:1px;
+	border:1px solid $colorTema;
+}
+#contenido #galeria .imgD,
+#contenido #galeria .imgI{
+	margin:1em;
+}
+
+#contenido .imgD img,
+#contenido .imgI img,
+#contenido .imgC img{
+	max-width:150px;
+	max-height:150px;
+}
+
+#index  .imgD img,
+#index  .imgI img,
+#index  .imgC img{
+	max-width:none;
+	max-height:none;
+}
+
+#contenido a.imgD {
+    float: right;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#contenido a.imgI{
+	float:left;
+	margin-left:0;
+	margin-right:1em;
+}
+
+#contenido a.imgC{
+	text-align:center;		
+}
+
+#contenido #servicios a.imgC img{
+	margin-left:30%;
+	max-height:240px;
+}
+
+#contenido{
+	height:100%;
+}
+
+#galeria #mensaje{
+	display:none;
+	margin:0 auto;
+}
+
+#contenido #galeria {
+	
+	margin: 0 auto;
+	padding-left:15%;
+	
+	ul{
+		list-style:none;
+		float:left;
+		margin-right:3em;
+		margin-left:0;
+		text-align:left;
+		padding:0;
+		width:25%;
+	}
+
+	li{
+		margin-top:1em;
+	}
+
+	&:after{
+		@extend %clearfixAfter;
+	}
+}
+
+#servicios ul{
+	list-style:none;
+}
+/*Fin de imagenes*/
+
+#contacto #mapa{
+	margin-left:20%;
+}
+
+p.pedirCita{
+	font-style:italic;
+	font-size: 12px;
+	font-weight:bold;
+}
+.oculto{
+	display:none;
+}
+
+
+#promo {
+    background: url("../imagenes/banner_miguitas.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: 5px solid #929AAF;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+    width: 890px;
+    @include border-radius(5px);
+}
+#promo a {
+    display: block;
+    height: 70px;
+    text-indent: -9999em;
+    width: 100%;
+    @include border-radius(5px);
+}
